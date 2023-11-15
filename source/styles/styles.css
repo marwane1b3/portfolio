@@ -60,7 +60,8 @@ body {
   width: 30%;
   position: fixed;
   top: 0;
-  right: -40%;
+  opacity: 0.8;
+  right: -100%;
   transition: right 0.5s ease;
 }
 .container .drawer.show-drawer {
@@ -68,6 +69,9 @@ body {
   right: 0;
 }
 @media (max-width: 1101px) {
+  .container .header .navigation-menu-container {
+    justify-content: right;
+  }
   .container .header .navigation-menu-container .hamburger-menu-btn {
     display: block !important;
   }
@@ -80,7 +84,9 @@ body {
 }
 @media (max-width: 400px) {
   .container .drawer {
-    width: 40%;
-    right: -50%;
+    justify-content: right;
+    width: 50%;
+    opacity: 0.8;
+    right: -100%;
   }
 }/*# sourceMappingURL=styles.css.map */

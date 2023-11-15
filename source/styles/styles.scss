@@ -64,7 +64,8 @@ body {
     width: 30%;
     position: fixed;
     top: 0;
-    right: -40%;
+    opacity: 0.8;
+    right: -100%;
     transition: right 0.5s ease;
     &.show-drawer {
       display: flex !important;
@@ -75,6 +76,7 @@ body {
   @media (max-width: 1101px) {
     .header {
       .navigation-menu-container {
+        justify-content: right;
         .hamburger-menu-btn {
           display: block !important;
         }
@@ -90,8 +92,11 @@ body {
   }
   @media (max-width: 400px) {
     .drawer {
-      width: 40%;
-      right: -50%; // Initially off-screen
+      justify-content: right;
+
+      width: 50%;
+      opacity: 0.8;
+      right: -100%; // Initially off-screen
     }
   }
 }
