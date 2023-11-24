@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
     drawer.classList.toggle("show-drawer");
   });
 
-  // Close drawer when clicking outside
   document.addEventListener("click", function (event) {
     const isDrawerOpen = drawer.classList.contains("show-drawer");
     const isClickInsideDrawer = drawer.contains(event.target);
@@ -14,6 +13,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (isDrawerOpen && !isClickInsideDrawer && !isClickOnHamburger) {
       drawer.classList.remove("show-drawer");
+    }
+  });
+  document.addEventListener("keydown", function (ev) {
+    if (ev.key === "Escape") {
+      const isDrawerOpen = drawer.classList.contains("show-drawer");
+      if (isDrawerOpen) {
+        drawer.classList.remove("show-drawer");
+      }
     }
   });
 });

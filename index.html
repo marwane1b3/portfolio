@@ -13,59 +13,73 @@
   </head>
   <body>
     <div class="container">
-      <!-- header  -->
       <div class="header">
         <div class="header-title-container">
           <div class="header-title-text">FULLSTACK MOBILE WEB DEVELOPER</div>
         </div>
         <div class="navigation-menu-container">
-          <!-- Hamburger menu button -->
           <div class="hamburger-menu-btn">
             <box-icon name="menu" color="#fff" size="lg"></box-icon>
           </div>
-          <div class="navigation-item-container">About</div>
+          <div class="navigation-item-container">About me</div>
           <div class="navigation-item-container">Technologies</div>
           <div class="navigation-item-container">Samples</div>
           <div class="navigation-item-container">Experiences</div>
           <div class="navigation-item-container">Contact</div>
+          <div class="langage-container">
+            <div class="dropdown-container">
+              <select>
+                <option value="0">lang</option>
+                <option value="1">FR</option>
+                <option value="2">EN</option>
+              </select>
+            </div>
+          </div>
         </div>
-        <!-- Drawer container -->
       </div>
-      <div class="drawer"></div>
-      <!-- end header -->
-      <!-- language changer -->
-      <div class="langage-container">
-        <div class="dropdown-container">
-          <div class="dropdown">FRENCH</div>
+      <div class="drawer">
+        <div class="drawer-container">
+          <div class="drawer-item">About me</div>
+          <div class="drawer-item">Technologies</div>
+          <div class="drawer-item">Samples</div>
+          <div class="drawer-item">Experiences</div>
+          <div class="drawer-item">Contact</div>
         </div>
       </div>
-      <!-- end language changer -->
-      <!-- about me / education -->
+
       <div class="about-me-container">
         <div class="section-title">ABOUT ME</div>
 
-        <div class="about-me-container-personal">
-          <div class="about-me-container-personal-header">
-            <div class="about-me-container-personal-header-text">your name</div>
-            <div class="about-me-container-personal-header-image">
-              personal image here
+        <div class="about-me-content-container">
+          <div class="about-me-container-personal">
+            <div class="about-me-container-personal-header">
+              <div class="about-me-container-personal-header-image"></div>
+              <div class="about-me-container-personal-header-text">
+                Marwane Akef
+              </div>
+            </div>
+            <div class="about-me-container-personal-body">
+              <div class="about-me-container-personal-body-text">
+                A Full Stack Developer with two years of professional
+                experience, specializing in web and mobile development, project
+                management, Agile methodology, and quality assurance testing.
+                Adept at coordinating effectively with development teams,
+                clients, and non-technical stakeholders to execute complex
+                development projects.
+              </div>
             </div>
           </div>
-          <div class="about-me-container-personal-body">
-            <div class="about-me-container-personal-body-text">who are you</div>
-          </div>
-        </div>
 
-        <div class="education-container">
-          <div class="education-item-container">
-            <div class="education-school-name">shcool name</div>
-            <div class="education-school-date">shcool entry date</div>
-            <div class="education-school-level">shcool level</div>
+          <div class="education-container">
+            <div class="education-item-container">
+              <div class="education-school-name">shcool name</div>
+              <div class="education-school-date">shcool entry date</div>
+              <div class="education-school-level">shcool level</div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- end about me / education -->
-      <!-- tech stack -->
+
       <div class="tech-stack-container">
         <div class="section-title">TECH STACK</div>
         <div class="tech-stack-item-container">
@@ -73,14 +87,12 @@
           <div class="tech-stack-name">tech name</div>
         </div>
       </div>
-      <!-- end tech stack -->
-      <!-- samples -->
+
       <div class="samples-slider-container">
         <div class="section-title">SAMPLES</div>
         <div class="slider-samples-container">samples slider here</div>
       </div>
-      <!-- end samples -->
-      <!-- experiences -->
+
       <div class="experiences-slider-container">
         <div class="section-title">EXPERIENCES</div>
         <div class="slider-experiences-container">experiences slider here</div>
@@ -97,6 +109,7 @@
       </div>
     </div>
     <script src="./source/js/drawer.js"></script>
+    <script src="./source/js/dropdown.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
 </html>
