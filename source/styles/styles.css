@@ -5,9 +5,9 @@
 
 html,
 body {
-  height: 100dvh;
-  background-color: #325a75;
-  color: #ffffff;
+  height: 100%;
+  background-color: #f4f5ff;
+  color: #000000;
 }
 
 .container {
@@ -19,8 +19,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #003153;
-  color: #eaf6f6;
+  background-color: #ffffff;
+  color: #000000;
   padding-inline: 15px;
   padding-block: 25px;
 }
@@ -37,8 +37,7 @@ body {
   transition: 0.3s;
 }
 .container .header .navigation-menu-container .navigation-item-container {
-  color: #ffffff;
-  border-right: 1px solid #fff;
+  color: #000000;
   width: 16%;
   text-align: center;
   padding-block: 12px;
@@ -46,29 +45,28 @@ body {
 }
 .container .header .navigation-menu-container .navigation-item-container:hover {
   cursor: pointer;
-  border-right: 1px solid #4b64c9;
   width: 16%;
   border-radius: 100%;
-  color: #003153;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #0693e3;
   padding-block: 12px;
 }
 .container .drawer {
   display: none;
-  background-color: #ffffff;
-  color: #003153;
+  background-color: #0693e3;
+  color: #ffffff;
   padding: 15px;
   height: 100vh;
   width: 250px;
   position: fixed;
   top: 0;
-  opacity: 0.8;
   right: -120%;
   transition: right 0.5s ease;
 }
 .container .drawer.show-drawer {
   display: flex !important;
   right: 0;
+  z-index: 1;
 }
 .container .drawer.show-drawer .drawer-container {
   display: flex;
@@ -79,8 +77,8 @@ body {
   padding-top: 100px;
 }
 .container .drawer.show-drawer .drawer-container .drawer-item {
-  color: #003153;
-  border-bottom: 1px solid #f1f1f1;
+  color: #ffffff;
+  border-bottom: 1px solid #0693e3;
   width: 80%;
   padding-block: 25px;
   text-align: center;
@@ -88,9 +86,9 @@ body {
   transition: 0.5s ease;
 }
 .container .drawer.show-drawer .drawer-container .drawer-item:hover {
-  border: 1px solid #f1f1f1;
+  border: 1px solid #ffffff;
   border-radius: 100%;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   color: #4b64c9;
 }
 .container .langage-container {
@@ -136,7 +134,7 @@ body {
 }
 .container .langage-container .dropdown-container .select-items {
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   top: 100%;
   left: 0;
   right: 0;
@@ -171,22 +169,20 @@ body {
   display: flex;
   flex: 45%;
   flex-direction: column;
-  margin-left: 2.5%;
-  background-color: #194564;
+  margin-inline: 2.5%;
+  background-color: #abb8c3;
   transform: translateY(0);
-  transition: 2s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .container .about-me-container .about-me-content-container .about-me-container-personal:hover {
-  transform: translateY(-60px);
   border-radius: 15px;
-  background-color: #66bfbf;
+  background-color: #ffffff;
 }
 .container .about-me-container .about-me-content-container .about-me-container-personal:hover .about-me-container-personal-header-text {
-  color: #003153 !important;
+  color: #0693e3 !important;
 }
 .container .about-me-container .about-me-content-container .about-me-container-personal:hover .about-me-container-personal-body-text {
-  font-size: 20px !important;
-  color: #003153;
+  color: #0693e3;
 }
 .container .about-me-container .about-me-content-container .about-me-container-personal .about-me-container-personal-header {
   display: flex;
@@ -206,27 +202,108 @@ body {
 .container .about-me-container .about-me-content-container .about-me-container-personal .about-me-container-personal-header .about-me-container-personal-header-text {
   font-size: xxx-large;
   letter-spacing: 1px;
-  color: #f1f1f1;
+  color: #ffffff;
   font-weight: bolder;
-  transition: 2s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .container .about-me-container .about-me-content-container .about-me-container-personal .about-me-container-personal-body {
   padding: 15px;
 }
 .container .about-me-container .about-me-content-container .about-me-container-personal .about-me-container-personal-body .about-me-container-personal-body-text {
-  font-size: 16px;
-  letter-spacing: 0.5px;
+  font-size: 20px;
+  letter-spacing: 0.3px;
   font-weight: 600;
   display: flex;
   flex-wrap: wrap;
-  transition: 2s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.container .about-me-container .about-me-content-container .education-item-container {
+  margin-top: 62px;
+  padding: 25px;
+  transition: 0.5s ease-in-out;
 }
 .container .about-me-container .about-me-content-container .education-container {
   display: flex;
   flex: 45%;
+  max-height: 400px;
+  overflow: hidden;
+  position: relative;
   flex-direction: column;
-  background-color: #eaf6f6;
-  margin-right: 2.5%;
+  background-color: #abb8c3;
+  margin-inline: 2.5%;
+  padding: 15px;
+  height: auto;
+}
+.container .about-me-container .about-me-content-container .education-container:hover {
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+.container .about-me-container .about-me-content-container .education-container:hover .e-option {
+  color: #0693e3 !important;
+}
+.container .about-me-container .about-me-content-container .education-container #upButton,
+.container .about-me-container .about-me-content-container .education-container #downButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+}
+.container .about-me-container .about-me-content-container .education-container #upButton {
+  left: 10px;
+}
+.container .about-me-container .about-me-content-container .education-container #downButton {
+  right: 10px;
+}
+.container .about-me-container .about-me-content-container .education-container .slider {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+}
+.container .about-me-container .about-me-content-container .education-container .slider .slider-item {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out, pointer-events 0.5s ease-in-out;
+}
+.container .about-me-container .about-me-content-container .education-container .slider .slider-item.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.container .about-me-container .about-me-content-container .education-container .education-school-header-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.container .about-me-container .about-me-content-container .education-container .education-school-header-container .education-school-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.container .about-me-container .about-me-content-container .education-container .education-shcool-body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .about-me-container .about-me-content-container .education-container .education-shcool-body-container .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  flex-wrap: wrap;
+  width: 70%;
+  gap: 15px;
+  padding: 15px;
+}
+.container .about-me-container .about-me-content-container .education-container .education-shcool-body-container .wrapper .e-option {
+  font-size: 16px;
+  font-weight: 800;
+  color: #000000;
+  padding-right: 15px;
 }
 @media (max-width: 1101px) {
   .container .header .navigation-menu-container {
@@ -234,6 +311,7 @@ body {
     align-items: center;
   }
   .container .header .navigation-menu-container .hamburger-menu-btn {
+    fill: #0693e3 !important;
     display: block !important;
   }
   .container .header .navigation-menu-container .navigation-item-container {
@@ -243,14 +321,45 @@ body {
     display: flex !important;
   }
 }
-@media (max-width: 722px) {
+@media (max-width: 940px) {
+  .container .education-school-img-1 {
+    padding: 10% !important;
+  }
+}
+@media (max-width: 782px) {
   .container .about-me-container-personal-header-text {
     font-size: xx-large !important;
   }
 }
-@media (max-width: 523px) {
+@media (max-width: 752px) {
+  .container .about-me-container-personal-body-text {
+    font-size: 16px !important;
+    letter-spacing: 0.1px !important;
+    font-weight: 600 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+}
+@media (max-width: 590px) {
   .container .about-me-container-personal-header-text {
     font-size: large !important;
+  }
+  .container .about-me-content-container {
+    flex: 1 !important;
+    flex-direction: column !important;
+    gap: 25px !important;
+  }
+  .container .about-me-container-personal-header-text {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    font-size: xx-large !important;
+  }
+  .container .about-me-container-personal-body-text {
+    font-size: 20px !important;
+    letter-spacing: 0.3px !important;
+    font-weight: 600 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
   }
 }
 @media (max-width: 400px) {
@@ -259,17 +368,5 @@ body {
     width: 250px;
     opacity: 0.8;
     right: -1000%;
-  }
-  .container .about-me-container-personal-header-text {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    font-size: medium !important;
-  }
-  .container .about-me-container-personal-body-text {
-    font-size: 12px !important;
-    letter-spacing: 0.3px !important;
-    font-weight: 600 !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
   }
 }/*# sourceMappingURL=styles.css.map */
